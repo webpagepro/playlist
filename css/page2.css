@@ -15,7 +15,7 @@ main, footer{
 }
 
 main {
-height:504px;
+height:404px;
 display:flex;
 
 
@@ -23,7 +23,7 @@ display:flex;
 
 container{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
   align-items: stretch;
 justify-content: center; justify-content:space-between; justify-content:space-around;
 justify-content:space-evenly;
@@ -79,11 +79,10 @@ input[type = "button"] {
 }
 
 
-
 navbar{
   background-color:gray;
   background-color:#999;
-    height:35px;
+    height:110px;
     width:798px;
 
 }
