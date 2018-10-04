@@ -1,6 +1,4 @@
 html, container{
-  background-image: url('images/fadedTrack.jpg');
-  background-repeat:no-repeat;
 margin:0;
 padding:0;
 width:100%;
@@ -15,9 +13,11 @@ main, footer{
 }
 
 main {
-height:404px;
+height:454px;
+overflow-x: auto;
 display:flex;
-
+align-items: center;
+flex-direction:column;
 
 }
 
@@ -30,13 +30,19 @@ justify-content:space-evenly;
   flex-flow: row wrap;
 }
 
-aside{
-justify-content: right;
+.carousel{
   border:2px solid #000;
-  height:580px;
-  order:2;
+  height:90px;width:790px;
+  overflow-x: scroll;
+overflow-y: hidden;
+white-space: nowrap;
+flex: 0 0 auto;
+}
 
-
+.album-details{
+  border:2px solid #000;
+  height:160px;width:700px;
+  background-color:#ccc;
 }
 .left-col{
    z-index:1;
@@ -45,35 +51,26 @@ justify-content: right;
 
 }
 
-.right-col{
-  width:53%;
-background: url('/Users/samuel/galvanize/assessment_one/playlist/images/fadedTrack.jpg') 0 -7px;
-background-size: cover;
+.separator{
+  width:798px;
+height:40px;
 }
 
-.bin{
- maring-right:200px;
-  color:purple;
-  font-family:fantasy;
-  letter-spacing:2px;
-  font-weight:lighter;
-  font-size:2.2em;
-  position:relative;
-  top:36%; left:24%;
-
-    z-index: 1;
+.button-container{
+width:700px;
 }
+
 input[type = "button"] {
   width:150px;
   background-color:#333;
   color:#fff;
-  height:34px;
+  height:40px;
   border-radius:5px;
   font-size:1.1em;
   font-family:Avenir;
   position:relative;
-  top: 190px;
-  left:24%;
+  top: 10px;
+  left:0%;
   font-weight:lighter;
   letter-spacing: 1px;
 }
@@ -84,6 +81,18 @@ navbar{
   background-color:#999;
     height:110px;
     width:798px;
+
+}
+
+
+.slogan{
+  position:relative;
+  top:80px;
+  font-size:1.5em;
+  padding:6px;
+  font-weight:lighter;
+  font-family:Avenir;
+
 
 }
 
@@ -103,8 +112,12 @@ footer #copyright{
   font-weight:lighter;
 }
 
-..img {
-  /* unused but necessary for inner images */
-  max-width: 100%;
-  max-height: 100vh;
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }

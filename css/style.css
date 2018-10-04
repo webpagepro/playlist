@@ -1,6 +1,4 @@
 html, container{
-  background-image: url('images/fadedTrack.jpg');
-  background-repeat:no-repeat;
 margin:0;
 padding:0;
 width:100%;
@@ -64,10 +62,10 @@ background-size: cover;
     z-index: 1;
 }
 input[type = "button"] {
-  width:150px;
+  width:160px;
   background-color:#333;
   color:#fff;
-  height:34px;
+  height:40px;
   border-radius:5px;
   font-size:1.1em;
   font-family:Avenir;
@@ -103,6 +101,8 @@ footer #copyright{
   letter-spacing:2px;
   font-weight:lighter;
 }
+
+
 
 ..img {
   /* unused but necessary for inner images */
