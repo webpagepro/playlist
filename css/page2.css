@@ -37,6 +37,11 @@ justify-content:space-evenly;
 overflow-y: hidden;
 white-space: nowrap;
 flex: 0 0 auto;
+overflow-x: visible;
+overflow-x: hidden;
+overflow-x: scroll;
+overflow-x: auto;
+
 }
 
 .album-details{
@@ -87,11 +92,12 @@ navbar{
 
 .slogan{
   position:relative;
-  top:80px;
-  font-size:1.5em;
+  top:70px;
+  font-size:1.6em;
   padding:6px;
   font-weight:lighter;
   font-family:Avenir;
+  color:#fff;
 
 
 }
@@ -113,11 +119,6 @@ footer #copyright{
 }
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'Avenir';
+  src: url('/Users/samuel/galvanize/assessment_one/playlist/fonts/AvenirNextLTPro-Regular');
 }
