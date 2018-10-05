@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 
   </head>
-  <body>
+  <body window.onload = "choosePic()">
     <container>
 
       <navbar></navbar>
@@ -18,13 +18,22 @@
 </div>
 
     <div class="right-col">
-    <div class="images-sidebar">  <img src="/Users/samuel/galvanize/assessment_one/playlist/images/ghost_in_the_machine.jpg" width="160" height="160" class="role-preview" alt="roles"/>
-
-<img src="/Users/samuel/galvanize/assessment_one/playlist/images/the_division_bell.jpg" width="160" height="160" class="role-preview" alt="roles"/>
-
-<img src="/Users/samuel/galvanize/assessment_one/playlist/images/thriller.jpg" width="160" height="160" class="role-preview" alt="roles"/>
-
+      
+       
+    <div class="images-sidebar">  
+        <div class="img-preview"> 
+      </div>
     </div>
+    <script>
+    
+
+
+function choosePic(pix) {
+	randomNum = Math.floor((Math.random() * pix.length));
+	document.querySelector(".img-preview").src = pix[randomNum];
+}
+
+  </script>
 </div>
 </main>
     <footer><div id ="copyright">&copy; 2015 Samuel Urcuyo</div></footer>

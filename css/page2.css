@@ -82,8 +82,7 @@ input[type = "button"] {
 
 
 navbar{
-  background-color:gray;
-  background-color:#999;
+  background-color:#686859;
     height:110px;
     width:798px;
 
@@ -103,7 +102,7 @@ navbar{
 }
 
 footer{
-background-color:#999999;
+background-color:#686859;
     height:35px
 
 }
@@ -120,5 +119,5 @@ footer #copyright{
 
 @font-face {
   font-family: 'Avenir';
-  src: url('/Users/samuel/galvanize/assessment_one/playlist/fonts/AvenirNextLTPro-Regular');
+  src: url('fonts/AvenirNextLTPro-Regular.otf');
 }
