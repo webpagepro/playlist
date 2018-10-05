@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/page2.css"/>
-
+    <link rel="stylesheet" href="css/playlist.css"/>
   </head>
   <body>
     <container>
@@ -13,26 +12,25 @@
       <main>
 
         <div class="carousel">
-          <!--script>
-                  var myPix = ["images/thriller.jpg","images/ghost_in_the_machine.jpg","images/red.jpg","images/21.jpg","images/the_division_bell.jpg"];
+          <script>
 
-          const imgPrev = document.querySelector('.img-preview');
-          var len = myPix.length;
+                  var cpix = ["images/thriller.jpg","images/ghost_in_the_machine.jpg","images/red.jpg","images/21.jpg","images/the_division_bell.jpg"];
+
+          const slider = document.querySelector('.carousel');
+          var len = cpix.length;
 
 
 
                      function choosePic() {
                           for(let i = 0; i < len; i++){
                    const img = document.createElement('img');
-
-
           img.className ="slider";
-          img.src = jsonData[i];
-          imgPrev.appendChild(img);
+          img.src = cpix[i];
+          slider.appendChild(img);
           }
           }
           choosePic();
-        </script-->
+        </script>
 </div>
 <div class="separator"></div>
     <div class="album-details">
@@ -44,8 +42,8 @@
 </div>
 </main>
     <footer><div id ="copyright">&copy; 2015 Samuel Urcuyo</div></footer>
-</container
+</container>
 
-  <script src="./assets/scripts/app.js" charset="utf-8"></script>
+  <script src="assets/scripts/app.js"></script>
   </body>
 </html>
