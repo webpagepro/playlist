@@ -18,22 +18,24 @@
 </div>
 
     <div class="right-col">
-      
-       
-    <div class="images-sidebar">  
-        <div class="img-preview"> 
+    <div class="images-sidebar">
+        <div class="img-preview">
       </div>
     </div>
     <script>
-    
-    
-    
+var myPix = ["images/thriller.jpg","images/ghost_in_the_machine.jpg","images/red.jpg","images/21.jpg","images/the_division_bell.jpg"];
+            var len = myPix.length;
+            const imgPrev = document.querySelector('.images-sidebar');
 function choosePic() {
-  let pix = ["thriller.jpg","ghost_in_the_machine.jpg","red.jpg","21.jpg","the_division_bell.jpg"];
-	randomNum = Math.floor((Math.random() * pix.length));
-	document.querySelector(".img-preview").src = pix[randomNum];
+for(let i = 0; i < 3; i++){
+  randomNum = Math.floor((Math.random() * len));
+  const img = document.createElement('img');
+  img.className ="discography";
+ img.src = myPix[randomNum];
+ imgPrev.appendChild(img)
+ }
 }
-choosePic();
+
   </script>
 </div>
 </main>

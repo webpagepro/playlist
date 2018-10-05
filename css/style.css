@@ -107,28 +107,29 @@ footer #copyright{
   overflow-y: hidden;
   overflow-y: hidden;
   z-index:1;
-
-
-}
-
-.images-sidebar  :before {
-    content: ' ';
-    height: 100%;
-    z-index: 1;
-             opacity: 19%;
-             border:none;
+  content: ' ';
+  z-index: -1;
+           opacity: 19%;
+           border:none;
 }
 
 
+.images-sidebar{
 
-img.role-preview{
+}
+
+
+
+img.role-preview, .discography{
   justify-content: space-around;
   justify-content: space-between;
   overflow-y: hidden;
   overflow-y: hidden;
   margin:5px;
-  width:160px;
+  width:170px;
   height:160px;
+  z-index: 1;
+  opacity:1
 }
 
 
@@ -139,7 +140,7 @@ img.role-preview{
 
 
 .img-preview{
-  
+
   display:flex;
   flex-direction:column;
   align-items:center;

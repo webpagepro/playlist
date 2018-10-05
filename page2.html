@@ -13,7 +13,29 @@
       <main>
 
         <div class="carousel">
+          <script>
+                  var myPix = ["images/thriller.jpg","images/ghost_in_the_machine.jpg","images/red.jpg","images/21.jpg","images/the_division_bell.jpg"];
 
+          const imgPrev = document.querySelector('.img-preview');
+          var len = myPix.length;
+
+
+
+                     function choosePic() {
+                          for(let i = 0; i < len; i++){
+                   const img = document.createElement('img');
+
+
+          img.className ="discography";
+
+
+          randomNum = Math.floor((Math.random(i) * len));
+          img.src = myPix[randomNum];
+          imgPrev.appendChild(img);
+          }
+          }
+          choosePic();
+          </script>
 </div>
 <div class="separator"></div>
     <div class="album-details">
