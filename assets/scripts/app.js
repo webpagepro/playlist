@@ -24,7 +24,7 @@ fetch(baseURL)
   .then(function(jsonData) {
 //console.log(jsonData);
 let newObj = jsonData.results;
-;
+
 //  for (let k in newObj) {
 console.log(Object.keys(newObj));
 
