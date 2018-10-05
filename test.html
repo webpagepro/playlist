@@ -1,0 +1,38 @@
+         <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+  </head>
+  <body onload = "choosePic()">
+
+    <div class="img-preview">     </div>
+    <span class=\"booklink\"><img src="images/">five</span>
+
+      <script>
+              var myPix = ["images/thriller.jpg","images/ghost_in_the_machine.jpg","images/red.jpg","images/21.jpg","images/the_division_bell.jpg"];
+
+
+            const imgPrev = document.querySelector('.img-preview');
+
+
+
+function choosePic() {   for(let i = 0; i < myPix.length; i++){
+          const img = document.createElement('img');
+img.className ="discography";
+
+
+	randomNum = Math.floor((Math.random() * myPix.length));
+	img.src = myPix[randomNum];
+	imgPrev.appendChild(img);
+}               }
+  choosePic();
+  </script>
+
+
+
+
+  </body>
+  </html>

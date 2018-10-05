@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 
   </head>
-  <body window.onload = "choosePic()">
+  <body onload = "choosePic()">
     <container>
 
       <navbar></navbar>
@@ -26,13 +26,14 @@
     </div>
     <script>
     
-
-
-function choosePic(pix) {
+    
+    
+function choosePic() {
+  let pix = ["thriller.jpg","ghost_in_the_machine.jpg","red.jpg","21.jpg","the_division_bell.jpg"];
 	randomNum = Math.floor((Math.random() * pix.length));
 	document.querySelector(".img-preview").src = pix[randomNum];
 }
-
+choosePic();
   </script>
 </div>
 </main>

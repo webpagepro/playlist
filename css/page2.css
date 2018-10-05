@@ -41,7 +41,15 @@ overflow-x: visible;
 overflow-x: hidden;
 overflow-x: scroll;
 overflow-x: auto;
-
+/*
+justify-content: space-around;
+  justify-content: space-between;
+  overflow-y: hidden;
+  overflow-y: hidden;
+  margin:5px;
+  width:160px;
+  height:160px;
+*/
 }
 
 .album-details{
@@ -82,6 +90,7 @@ input[type = "button"] {
 
 
 navbar{
+
   background-color:#686859;
     height:110px;
     width:798px;

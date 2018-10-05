@@ -8,10 +8,12 @@ const imgPrev = document.querySelector('.img-preview');
 
 let myPix = ["images/thriller.jpg","images/ghost_in_the_machine.jpg","images/red.jpg","images/21.jpg","images/the_division_bell.jpg"];
 
+let myPix2 = ["thriller.jpg","ghost_in_the_machine.jpg","red.jpg","21.jpg","the_division_bell.jpg"];
+
 for(let i = 0; i < myPix.length; i++){
 const img = document.createElement('img');
 img.className ="discography";
-img.src = myPix[i];
+img.src = myPix2[i];
 imgPrev.appendChild(img);
 
 }
