@@ -13,7 +13,7 @@ main, footer{
 }
 
 main {
-height:514px;
+height:510px;
 display:flex;
 
 
@@ -26,39 +26,30 @@ container{
 justify-content: center; justify-content:space-between; justify-content:space-around;
 justify-content:space-evenly;
   flex-flow: row wrap;
+
 }
 
-aside{
-justify-content: right;
-  border:2px solid #000;
-  height:580px;
-  order:2;
-}
 .left-col{
 
-   width:48%;
+   width:49%;
    background-color:#eeeeee;
    border:0;
 }
 
 .right-col{
-  width:52%;
-  background: url('../images/Track.jpg') 0 -7px #eeeeee;
+  width:51%;
+  background: url('../images/Track.jpg') 0 -9px;
   background-size: cover;
-  z-index: -10000000000;
+
 border:0;
+
+background-color:#eeeeee;
+
 }
 
-.right-col::after{
-  width:52%;
-  background: url('../images/Track.jpg') 0 -7px #eeeeee;
-  background-size: cover;
-  z-index: -1;
-border:0;
-position:absolute;
-opacity:.19;
-}
+main{
 
+}
 
 .bin{
  margin-right:00px;
@@ -118,16 +109,13 @@ footer #copyright{
   overflow-y: hidden;
   content: ' ';
   border:none;
+
+
 }
 
 
-.images-sidebar{
 
-}
-
-
-
-img.role-preview, .discography{
+img.role-preview, img.discography{
   justify-content: space-around;
   justify-content: space-between;
   overflow-y: hidden;
@@ -154,6 +142,10 @@ img.role-preview, .discography{
   justify-content: space-between;
   overflow-y: hidden;
   overflow-y: hidden;
-  z-index:-10;
-  opacity:.19;
+  z-index:3;
+  background-color:#fff;
+  opacity:.9;
+  background-size:cover;
+
+
 }
